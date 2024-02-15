@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Web Studio. Portfolio</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet">
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <a href="./index.html"><span class="web">Web</span>Studio</a>
+      <a href="./index.html" class="web">Web<span>Studio</span></a>
       <nav>
         <ul>
           <li><a class="medium" href="./index.html">Studio</a></li>
@@ -40,7 +40,7 @@
     </header>
     <main>
       <section class="filter-group">
-        <h1 class="invisible">Main header</h1>
+        <h1 class="main-header invisible">Portfolio</h1>
         <ul>
           <li><button type="button" class="active">All</button></li>
           <li><button type="button">Web Site</button></li>
@@ -48,60 +48,95 @@
           <li><button type="button">Design</button></li>
           <li><button type="button">Marketing</button></li>
         </ul>
-      </section>
-      <section class="card-panel">
-        <h2 class="invisible">section header</h2>
-        <div class="card">
-          <img src="./images/pc1.jpg" alt="banking">
-          <h3>Banking App Interface Concept</h3>
-          <p>App</p>
-        </div>
-        <div class="card">
-          <img src="./images/pc2.jpg" alt="cashless">
-          <h3>Cashless Payment</h3>
-          <p>Marketing</p>
-        </div>
-        <div class="card">
-          <img src="./images/pc3.jpg" alt="Meditation App">
-          <h3>Meditation App</h3>
-          <p>App</p>
-        </div>
-        <div class="card">
-          <img src="./images/pc4.jpg" alt="Taxi Service">
-          <h3>Taxi Service</h3>
-          <p>Marketing</p>
-        </div>
-        <div class="card">
-          <img src="./images/pc5.jpg" alt="Screen Illustrations">
-          <h3>Screen Illustrations</h3>
-          <p>Design</p>
-        </div>
-        <div class="card">
-          <img src="./images/pc6.jpg" alt="Online Courses">
-          <h3>Online Courses</h3>
-          <p>Marketing</p>
-        </div>
-        <div class="card">
-          <img src="./images/pc7.jpg" alt="Instagram Stories">
-          <h3>Instagram Stories Concept</h3>
-          <p>Design</p>
-        </div>
-        <div class="card">
-          <img src="./images/pc8.jpg" alt="Organic Food">
-          <h3>Organic Food</h3>
-          <p>Web Site</p>
-        </div>
-        <div class="card">
-          <img src="./images/pc9.jpg" alt="Fresh Coffee">
-          <h3>Fresh Coffee</h3>
-          <p>Web Site</p>
-        </div>
+        <ul>
+          <li class="card">
+            <img
+              src="./images/pc1.jpg"
+              alt="banking"
+              width="360"
+              height="300" />
+            <h2 class="header_card">Banking App Interface Concept</h2>
+            <p>App</p>
+          </li>
+          <li class="card">
+            <img
+              src="./images/pc2.jpg"
+              alt="cashless"
+              width="360"
+              height="300" />
+            <h2 class="header_card">Cashless Payment</h2>
+            <p>Marketing</p>
+          </li>
+          <li class="card">
+            <img
+              src="./images/pc3.jpg"
+              alt="Meditation App"
+              width="360"
+              height="300" />
+            <h2 class="header_card">Meditation App</h2>
+            <p>App</p>
+          </li>
+          <li class="card">
+            <img
+              src="./images/pc4.jpg"
+              alt="Taxi Service"
+              width="360"
+              height="300" />
+            <h2 class="header_card">Taxi Service</h2>
+            <p>Marketing</p>
+          </li>
+          <li class="card">
+            <img
+              src="./images/pc5.jpg"
+              alt="Screen Illustrations"
+              width="360"
+              height="300" />
+            <h2 class="header_card">Screen Illustrations</h2>
+            <p>Design</p>
+          </li>
+          <li class="card">
+            <img
+              src="./images/pc6.jpg"
+              alt="Online Courses"
+              width="360"
+              height="300" />
+            <h2 class="header_card">Online Courses</h2>
+            <p>Marketing</p>
+          </li>
+          <li class="card">
+            <img
+              src="./images/pc7.jpg"
+              alt="Instagram Stories"
+              width="360"
+              height="300" />
+            <h2 class="header_card">Instagram Stories Concept</h2>
+            <p>Design</p>
+          </li>
+          <li class="card">
+            <img
+              src="./images/pc8.jpg"
+              alt="Organic Food"
+              width="360"
+              height="300" />
+            <h2 class="header_card">Organic Food</h2>
+            <p>Web Site</p>
+          </li>
+          <li class="card">
+            <img
+              src="./images/pc9.jpg"
+              alt="Fresh Coffee"
+              width="360"
+              height="300" />
+            <h2 class="header_card">Fresh Coffee</h2>
+            <p>Web Site</p>
+          </li>
+        </ul>
       </section>
     </main>
     <footer>
       <div class="footer-text">
-        <a href="./index.html"
-          ><span class="web">Web</span><span class="studio">Studio</span></a
+        <a href="./index.html" class="web"
+          >Web<span class="studio">Studio</span></a
         >
         <p class="foot-info">
           Increase the flow of customers and sales for your business with

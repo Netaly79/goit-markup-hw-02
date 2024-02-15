@@ -15,28 +15,24 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 1.3;
   letter-spacing: 0.02em;
   color: var(--slate);
 }
 
-h1 {
-  font-family: inherit;
-  font-weight: bold;
-  font-size: 54px;
-  line-height: 1.2;
+.main-header {
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: 2%;
+  color: var(--white);
 }
 
-h2 {
-  font-family: inherit;
-  font-weight: bold;
+.header-2 {
   font-size: 36px;
 }
 
-h3 {
-  font-family: inherit;
+.header-3,
+.header-card {
   font-weight: 500;
   font-size: 20px;
   color: var(--navy);
@@ -46,7 +42,7 @@ ul {
   list-style-type: none;
 }
 
-.p {
+.desc {
   color: inherit;
   font-family: inherit;
   line-height: inherit;
@@ -55,7 +51,6 @@ ul {
 }
 
 .small {
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.15;
   letter-spacing: 0.04em;
@@ -75,7 +70,7 @@ a {
   font-size: 12px;
   line-height: inherit;
   letter-spacing: 0.04em;
-  text-decoration: underline;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -84,25 +79,24 @@ a {
 }
 
 header {
-  background-color: var(--cornflower);
   border-bottom: 1px solid var(--white);
-  margin-bottom: 96px;
 }
 
-header > a,
+.web,
 .footer-text > a {
   font-family: Raleway;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  text-align: left;
-  color: var(--navy);
-  text-decoration: none;
   text-transform: uppercase;
 }
 
-.studio,
+.web > span {
+  color: var(--navy);
+}
+
+.web > .studio,
 .foot-info {
   color: var(--cloud);
 }
@@ -111,17 +105,22 @@ header > a,
   color: var(--iris);
 }
 
-li > .medium {
+.main-section {
+  /* background-image: url("../images/people-office.png"); */
+  background-color: var(--navy);
+}
+
+.medium {
   font-size: 16px;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--navy);
 }
 
-li > .medium:hover,
+.medium:hover,
 .email:hover,
 .tel:hover,
-li > .medium.active {
+.medium.active {
   color: var(--ocean);
 }
 
@@ -129,10 +128,7 @@ li > .medium.active {
 .tel {
   color: inherit;
   font-size: inherit;
-}
-
-.filter-group {
-  margin: 70px;
+  font-style: normal;
 }
 
 button {
@@ -169,10 +165,17 @@ img {
 
 footer {
   background-color: var(--navy);
-  height: 312px;
 }
 
 .footer-text {
   max-width: 264px;
   font-family: inherit;
+}
+
+.team-section {
+  background-color: var(--cloud);
+}
+
+.team-card {
+  background-color: var(--white);
 }
