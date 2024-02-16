@@ -20,34 +20,43 @@ body {
   color: var(--slate);
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  font-size: 12px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 .main-header {
   font-size: 56px;
-  line-height: 60px;
-  letter-spacing: 2%;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
   color: var(--white);
 }
 
-.header-2 {
+.section-header {
   font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
 }
 
-.header-3,
 .header-card {
   font-weight: 500;
   font-size: 20px;
+  line-height: 1.22;
   color: var(--navy);
-}
-
-ul {
-  list-style-type: none;
+  letter-spacing: 0.02em;
 }
 
 .desc {
   color: inherit;
   font-family: inherit;
-  line-height: inherit;
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: left;
 }
 
 .small {
@@ -65,44 +74,27 @@ ul {
   letter-spacing: 0.04em;
 }
 
-a {
-  font-family: inherit;
-  font-size: 12px;
-  line-height: inherit;
-  letter-spacing: 0.04em;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 .invisible {
   display: none;;
 }
 
-header {
-  border-bottom: 1px solid var(--white);
-}
-
-.web,
-.footer-text > a {
+.logo {
   font-family: Raleway;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--iris);
 }
 
-.web > span {
+.studio-header {
   color: var(--navy);
 }
 
-.web > .studio,
+.studio,
 .foot-info {
   color: var(--cloud);
-}
-
-.web {
-  color: var(--iris);
 }
 
 .main-section {
@@ -110,52 +102,47 @@ header {
   background-color: var(--navy);
 }
 
-.medium {
+.nav-link {
   font-size: 16px;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--navy);
 }
 
-.medium:hover,
-.email:hover,
-.tel:hover,
-.medium.active {
+.nav-link:hover,
+.contact:hover,
+.nav-link.active {
   color: var(--ocean);
 }
 
-.email,
-.tel {
+.contact{
   color: inherit;
   font-size: inherit;
   font-style: normal;
 }
 
-button {
-  padding: 12px 24px 12px 24px;
-  border-radius: 4px;
+.btn {
+  /* padding: 12px 24px 12px 24px;
+  border-radius: 4px; */
   background-color: var(--cloud);
   border: 1px solid var(--cornflower);
   font-family: inherit;
   font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   color: var(--iris);
 }
 
-button.active {
+.btn.active {
   background-color: var(--iris);
   box-shadow: 0px 4px 4px 0px #00000026;
   color: var(--white);
 }
 
-button:hover {
+.btn:hover {
   background: var(--ocean);
   box-shadow: 0px 4px 4px 0px #00000026;
   color: var(--white);
-}
-
-img {
-  width: 360px;
-  height: 300px;
 }
 
 .team-member {
@@ -163,7 +150,7 @@ img {
   height: 260px;
 }
 
-footer {
+.foot {
   background-color: var(--navy);
 }
 
