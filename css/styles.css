@@ -30,24 +30,28 @@ a {
   cursor: pointer;
 }
 
+img {
+	display: block;
+  max-width: 100%;
+}
 
 .main-header {
   font-size: 56px;
-  line-height: 1.07;
+  line-height: 1.07143;
   letter-spacing: 0.02em;
   color: var(--white);
 }
 
 .section-header {
   font-size: 36px;
-  line-height: 1.1;
+  line-height: 1.1111;
   letter-spacing: 0.02em;
 }
 
 .header-card {
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.22;
+  line-height: 1.2;
   color: var(--navy);
   letter-spacing: 0.02em;
 }
@@ -107,6 +111,8 @@ a {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--navy);
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .nav-link:hover,
@@ -119,6 +125,7 @@ a {
   color: inherit;
   font-size: inherit;
   font-style: normal;
+  line-height: 1.5;
 }
 
 .btn {
@@ -133,7 +140,8 @@ a {
   color: var(--iris);
 }
 
-.btn.active {
+.btn.active,
+.btn.focus {
   background-color: var(--iris);
   box-shadow: 0px 4px 4px 0px #00000026;
   color: var(--white);
@@ -155,7 +163,6 @@ a {
 }
 
 .footer-text {
-  max-width: 264px;
   font-family: inherit;
 }
 
